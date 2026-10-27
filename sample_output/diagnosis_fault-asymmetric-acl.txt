@@ -1,0 +1,11 @@
+======================================================================
+DETERMINISTIC DIAGNOSIS
+Baseline: evidence/baseline-final.json
+Fault:    evidence/fault-asymmetric-acl.json (label: fault-asymmetric-acl)
+======================================================================
+
+3 finding(s):
+
+  - REACHABILITY REGRESSION: R-A1 -> R-B1 was OK in baseline, now FAILING
+  - REACHABILITY REGRESSION: R-A1 -> R-B2 was OK in baseline, now FAILING
+  - ACL DENY HITS: R-B1 -- 10 deny icmp host 10.0.0.1 any echo (10 matches)

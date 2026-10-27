@@ -1,0 +1,11 @@
+======================================================================
+DETERMINISTIC DIAGNOSIS
+Baseline: evidence/baseline.json
+Fault:    evidence/fault-primary-wan-down.json (label: fault-primary-wan-down)
+======================================================================
+
+3 finding(s):
+
+  - INTERFACE DOWN: R-A1 FastEthernet0/1 was up/up in baseline, now down/down
+  - OSPF ADJACENCY CHANGE: R-A1 Fa0/1 neighbor count was 1/1 in baseline, now 0/0
+  - OSPF ADJACENCY CHANGE: R-B1 Fa0/1 neighbor count was 1/1 in baseline, now 0/0

@@ -1,0 +1,13 @@
+======================================================================
+DETERMINISTIC DIAGNOSIS
+Baseline: evidence/baseline-final.json
+Fault:    evidence/fault-hsrp-active-down-recheck.json (label: fault-hsrp-active-down-recheck)
+======================================================================
+
+5 finding(s):
+
+  - INTERFACE DOWN: R-A1 FastEthernet0/0 was up/up in baseline, now down/down
+  - HSRP STATE CHANGE: R-A1 Fa0/0 grp1 was Active in baseline, now Init
+  - HSRP STATE CHANGE: R-A2 Fa0/0 grp1 was Standby in baseline, now Active
+  - OSPF ADJACENCY CHANGE: R-A1 Fa0/0 neighbor count was 1/1 in baseline, now 0/0
+  - OSPF ADJACENCY CHANGE: R-A2 Fa0/0 neighbor count was 1/1 in baseline, now 0/0

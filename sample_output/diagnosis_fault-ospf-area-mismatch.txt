@@ -1,0 +1,11 @@
+======================================================================
+DETERMINISTIC DIAGNOSIS
+Baseline: evidence/baseline-final.json
+Fault:    evidence/fault-ospf-area-mismatch.json (label: fault-ospf-area-mismatch)
+======================================================================
+
+3 finding(s):
+
+  - OSPF ADJACENCY CHANGE: R-A1 Fa0/0 neighbor count was 1/1 in baseline, now 0/0
+  - OSPF ADJACENCY CHANGE: R-A2 Fa0/0 neighbor count was 1/1 in baseline, now 0/0
+  - OSPF AREA MISMATCH on subnet 10.10.1.0/24: R-A1 Fa0/0=area0, R-A2 Fa0/0=area1
