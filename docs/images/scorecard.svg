@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="190" viewBox="0 0 1280 190" role="img" aria-label="Results at a glance">
+  <defs>
+    <style>
+      .num{font:800 62px "Segoe UI",Helvetica,Arial,sans-serif}
+      .lab{font:600 16px "Segoe UI",Helvetica,Arial,sans-serif;fill:#e5e7eb}
+      .sub{font:400 13.5px "Segoe UI",Helvetica,Arial,sans-serif;fill:#9ca3af}
+    </style>
+  </defs>
+  <g>
+    <rect x="0" y="0" width="300" height="190" rx="16" fill="#1f0f12" stroke="#ef4444" stroke-opacity="0.55" stroke-width="1.5"/>
+    <rect x="0" y="0" width="8" height="190" rx="4" fill="#ef4444"/>
+    <text x="34" y="86" class="num" fill="#f87171">0 / 4</text>
+    <text x="34" y="124" class="lab">faults diagnosed unaided</text>
+    <text x="34" y="148" class="sub">LLM copilot, first pass</text>
+  </g>
+  <g transform="translate(326,0)">
+    <rect width="300" height="190" rx="16" fill="#0c1f17" stroke="#10b981" stroke-opacity="0.55" stroke-width="1.5"/>
+    <rect width="8" height="190" rx="4" fill="#10b981"/>
+    <text x="34" y="86" class="num" fill="#34d399">4 / 4</text>
+    <text x="34" y="124" class="lab">faults named by the diff engine</text>
+    <text x="34" y="148" class="sub">same evidence, zero LLM</text>
+  </g>
+  <g transform="translate(652,0)">
+    <rect width="300" height="190" rx="16" fill="#241a08" stroke="#f59e0b" stroke-opacity="0.55" stroke-width="1.5"/>
+    <rect width="8" height="190" rx="4" fill="#f59e0b"/>
+    <text x="34" y="86" class="num" fill="#fbbf24">2</text>
+    <text x="34" y="124" class="lab">unprompted config attempts</text>
+    <text x="34" y="148" class="sub">repeat trials, no operator hint</text>
+  </g>
+  <g transform="translate(978,0)">
+    <rect width="302" height="190" rx="16" fill="#0b1830" stroke="#3b82f6" stroke-opacity="0.55" stroke-width="1.5"/>
+    <rect width="8" height="190" rx="4" fill="#3b82f6"/>
+    <text x="34" y="86" class="num" fill="#60a5fa">9</text>
+    <text x="34" y="124" class="lab">offline tests, all passing</text>
+    <text x="34" y="148" class="sub">no lab or GPU required</text>
+  </g>
+</svg>

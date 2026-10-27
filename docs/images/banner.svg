@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="AI-Assisted Network Troubleshooting Copilot">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1020"/>
+      <stop offset="0.6" stop-color="#11204a"/>
+      <stop offset="1" stop-color="#1b2f6b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.045"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="340" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="340" rx="18" fill="url(#grid)"/>
+  <rect x="56" y="62" width="150" height="28" rx="14" fill="#22d3ee" fill-opacity="0.14" stroke="#22d3ee" stroke-opacity="0.6"/>
+  <text x="131" y="81" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#67e8f9" letter-spacing="1.5">PROJECT 4 / 5</text>
+  <text x="56" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="50" font-weight="800" fill="#ffffff">AI-Assisted Network</text>
+  <text x="56" y="210" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="50" font-weight="800" fill="url(#accent)">Troubleshooting Copilot</text>
+  <text x="56" y="256" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#c7d2fe">Can an LLM be trusted as an active network diagnostician?</text>
+  <text x="56" y="284" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#c7d2fe">We tested it against deterministic ground truth.</text>
+
+  <!-- mini WAN topology -->
+  <g transform="translate(830,48)">
+    <!-- links -->
+    <line x1="60" y1="70" x2="330" y2="70" stroke="#ef4444" stroke-width="3" stroke-dasharray="9 7" stroke-opacity="0.95"/>
+    <text x="195" y="56" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#fca5a5">FAULT INJECTED</text>
+    <line x1="60" y1="210" x2="330" y2="210" stroke="#34d399" stroke-width="3"/>
+    <line x1="60" y1="70" x2="60" y2="210" stroke="#60a5fa" stroke-width="3"/>
+    <line x1="330" y1="70" x2="330" y2="210" stroke="#60a5fa" stroke-width="3"/>
+    <!-- nodes -->
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+      <circle cx="60" cy="70" r="30" fill="#0f1b3d" stroke="#22d3ee" stroke-width="3" filter="url(#glow)"/><text x="60" y="75" fill="#e0f2fe">R-A1</text>
+      <circle cx="60" cy="210" r="30" fill="#0f1b3d" stroke="#22d3ee" stroke-width="3" filter="url(#glow)"/><text x="60" y="215" fill="#e0f2fe">R-A2</text>
+      <circle cx="330" cy="70" r="30" fill="#0f1b3d" stroke="#818cf8" stroke-width="3" filter="url(#glow)"/><text x="330" y="75" fill="#e0e7ff">R-B1</text>
+      <circle cx="330" cy="210" r="30" fill="#0f1b3d" stroke="#818cf8" stroke-width="3" filter="url(#glow)"/><text x="330" y="215" fill="#e0e7ff">R-B2</text>
+    </g>
+    <text x="0" y="262" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93c5fd" fill-opacity="0.85">Site A</text>
+    <text x="390" y="262" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#a5b4fc" fill-opacity="0.85">Site B</text>
+  </g>
+</svg>
